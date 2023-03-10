@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BasicForm</title>
+</head>
+<style>
+    .hobby{
+        color: orange;
+    }
+    label{
+        color: #1933B1;
+    }
+</style>
+<body style="background-color: lightblue">
+<form style="margin-left: 500px;background-color:white;padding: 1px 10px 10px 10px;width: 350px">
+    <h2 style="text-align: center;color: white;background-color: #FF4C00">SỞ THÍCH CỦA BẠN</h2>
+    <table>
+        <tr>
+            <td>
+            <label for="name">Họ và tên</label>
+            </td>
+            <td>
+            <input style="border-top-color: black;border-left-color: black;border-color:#AFB1A9" id="name"type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <label style="margin-left: 24px" for="email">Email</label>
+            </td>
+            <td>
+            <input style="border-top-color: black;border-left-color: black;border-color:#AFB1A9" id="email"type="text" size="15">
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                <label style="margin-left: 8px">Sở thích</label>
+            </td>
+            <td class="hobby">
+            <input type="checkbox" name="hobby">Thể thao
+            <input type="checkbox" name="hobby">Âm nhạc
+            <input type="checkbox" name="hobby">Chơi game<br>
+            <input type="checkbox" id="docsach" name="hobby">Đọc sách
+            <input type="checkbox" name="hobby">Lướt web
+            <input type="checkbox" name="hobby">Điện ảnh<br>
+            <input type="checkbox" name="hobby">Du lịch<br>
+            <input style="margin-left: 5px" type="submit" value="Gửi thông tin">
+            <input type="reset" value="Nhập lại">
+            </td>
+        </tr>
+    </table>
+</form><br><br>
+<form style="margin-left: 500px;background-color:khaki;padding: 1px 10px 10px 10px;width: 350px">
+    <h2 style="color: blue;background-color: lightblue">ĐĂNG KÝ HỌC VIÊN</h2>
+    <table>
+        <tr>
+            <td>
+                <label for="name1">Họ và tên</label>
+            </td>
+            <td>
+                <input style="border-top-color: black;border-left-color: black;border-color:#AFB1A9" id="name1"type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="dob">Ngày sinh</label>
+            </td>
+            <td>
+                <input style="border-top-color: black;border-left-color: black;border-color:#AFB1A9" id="dob"type="text" size="10">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label style="margin-left: 5px">Giới tính</label>
+            </td>
+            <td>
+                <input type="radio" name="gender">Nam
+                <input type="radio" name="gender">Nữ
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label style="margin-left: 18px" for="Diachi">Địa chỉ</label>
+            </td>
+            <td>
+            <textarea id="Diachi" rows="2" cols="25"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label style="margin-left: 39px">Lớp</label>
+            </td>
+            <td>
+                <select id="class">
+                    <option >--Chọn--</option>
+                    <option >A02</option>
+                    <option >A03</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label style="margin-left: 28px" for="email1">Email</label>
+            </td>
+            <td>
+            <input style="border-top-color: black;border-left-color: black;border-color:#AFB1A9" type="text" id="email1">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="phonenumber">Điện thoại</label>
+            </td>
+            <td>
+                <input style="border-top-color: black;border-left-color: black;border-color:#AFB1A9" type="text" id="phonenumber"><br>
+                <input type="submit" value="Gửi thông tin">
+                <input type="reset" value="Nhập lại">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
