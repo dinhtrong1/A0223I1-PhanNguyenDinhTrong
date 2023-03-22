@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let grade1 = +(prompt("nhập điểm kiểm tra "));
+    let grade2 = +(prompt("nhập điểm thi giữa kỳ "));
+    let grade3 = +(prompt("nhập điểm thi cuối kỳ "));
+    let avg = (grade1+grade2+grade3)/3;
+    if(avg >= 9){
+        alert("hạng A");
+    }else if(avg>=7){
+        alert("hạng B");
+    }else if(avg>=5){
+        alert("hạng C");
+    }else{
+        alert("hạng F");
+    }
+</script>
+</html>
