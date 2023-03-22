@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <table>
+    <tr>
+        <td><label>nhập chiều cao của bạn</label></td>
+        <td><input id="height" type="text"></td>
+    </tr>
+    <tr>
+        <td><label>nhập cân nặng của bạn</label></td>
+        <td><input id="weight" type="text"></td>
+    </tr>
+    </table>
+    <input type="button" value="Check" onclick="checkBody()">
+</form>
+<p id="Result"></p>
+<script>
+    function checkBody(){
+        let height = document.getElementById("height").value;
+        let weight = document.getElementById("weight").value;
+        let bmi;
+        bmi = weight / (height ^ 2);
+        if (bmi < 18) {
+            document.getElementById("Result").innerHTML = "Underweight";
+        } else if (bmi < 25.0) {
+            document.getElementById("Result").innerHTML = 'Normal';
+        } else if (bmi < 30.0) {
+            document.getElementById("Result").innerHTML = 'Overweight';
+        } else {
+            document.getElementById("Result").innerText = 'Obese';
+        }
+    }
+</script>
+</body>
+</html>
