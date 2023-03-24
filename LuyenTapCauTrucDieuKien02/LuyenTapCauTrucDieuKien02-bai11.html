@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>LuyenTapCauTrucDieuKien02-bai11</title>
 </head>
 <body>
 </body>
 <script>
     let a = +prompt("Nhập số tiền bạn kiếm được: ");
-    if(a<5000000){
-        alert("Thuế thu nhập cá nhân là: "+a*(5/100) + "VND");
-    }else if(a>5000000 && a<10000000){
-        alert("Thuế thu nhập cá nhân là: "+a*(10/100) + "VND");
-    }else if (a>10000000 && a<18000000){
-        alert("Thuế thu nhập cá nhân là: "+a*(15/100) + "VND");
+    if(a < 5000000){
+        alert("Thuế thu nhập cá nhân là: " + a*(5/100) + "VND");
+    }else if(a > 5000000 && a < 10000000){
+        alert("Thuế thu nhập cá nhân là: " + a*(10/100) + "VND");
+    }else if (a > 10000000 && a < 18000000){
+        alert("Thuế thu nhập cá nhân là: " + a*(15/100) + "VND");
     }else{
-        alert("Thuế thu nhập cá nhân là: "+a*(20/100) + "VND");
+        alert("Thuế thu nhập cá nhân là: " + a*(20/100) + "VND");
     }
 </script>
 </html>
