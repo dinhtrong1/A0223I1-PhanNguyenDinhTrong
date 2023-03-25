@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Luyện tập cấu trúc điều kiện 01 - Bài 5</title>
 </head>
 <body>
 </body>
 <script>
+<<<<<<< HEAD
     let grade1 = +(prompt("nhập điểm kiểm tra "));
     let grade2 = +(prompt("nhập điểm thi giữa kỳ "));
     let grade3 = +(prompt("nhập điểm thi cuối kỳ "));
@@ -16,6 +17,17 @@
     } else if (avg >= 7) {
         alert("hạng B");
     } else if (avg >= 5) {
+=======
+    let gradeFirst = +(prompt("nhập điểm kiểm tra "));
+    let gradeSecond = +(prompt("nhập điểm thi giữa kỳ "));
+    let gradeThird = +(prompt("nhập điểm thi cuối kỳ "));
+    let avg = (gradeFirst + gradeSecond + gradeThird) / 3;
+    if(avg >= 9){
+        alert("hạng A");
+    }else if(avg >= 7){
+        alert("hạng B");
+    }else if(avg >= 5){
+>>>>>>> 1673dbe1a959854292fd9676162aa435412ef140
         alert("hạng C");
     } else {
         alert("hạng F");
