@@ -13,12 +13,12 @@
     numbers = +prompt("nhap vao so luong muon in ra");
     for (i = 2; count < numbers; i++) {
         a = 0;
-        for (j = 1; j <= i; j++) {
+        for (j = 2; j <= i; j++) {
             if (i % j === 0) {
                 a++;
             }
         }
-        if (a === 2) {
+        if (a === 1) {
             count++;
             document.writeln(i);
         }
