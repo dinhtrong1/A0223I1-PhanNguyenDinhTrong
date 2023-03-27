@@ -2,9 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>LuyenTapVongLap01-bai8</title>
 </head>
 <body>
+<center>
+<input onclick="play()" type="button" value="chơi" style="margin-top:200px;height: 100px;width: 100px">
+</center>
+<script>
+    let numFirst, numSecond, numThird, numFourth = 0, i;
 
+    function play() {
+        numFirst = +prompt("nhập vào số bạn muốn đoán bắt đầu");
+        numSecond = +prompt("nhập vào số bạn muốn kết thúc");
+        numThird = getRndInteger(numFirst, numSecond);
+        //alert(numThird);
+        numFourth = +prompt("hãy đoán số nằm trong khoảng từ " + numFirst + " đến " + numSecond);
+        for (i = 0; numFourth !== numThird; i++) {
+            if (numFourth < numThird) {
+                numFourth = +prompt("đáp án lớn hơn số bạn đoán, xin mời nhập lại");
+            } else if (numFourth > numThird) {
+                numFourth = +prompt("đáp án nhỏ hơn số bạn đoán, xin mời nhập lại");
+            }
+        }
+        alert("chúc mừng bạn đã đoán đúng đáp án là số " + numThird);
+    }
+
+    function getRndInteger(numFirst, numSecond) {
+        return Math.floor(Math.random() * (numFirst - numSecond + 1)) + numSecond;
+    }
+</script>
 </body>
 </html>
