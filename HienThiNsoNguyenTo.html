@@ -11,7 +11,7 @@
     let number, count = 0, a;
     let i, j;
     numbers = +prompt("nhap vao so luong muon in ra");
-    for (i = 2; ; i++) {
+    for (i = 2; count < numbers; i++) {
         a = 0;
         for (j = 1; j <= i; j++) {
             if (i % j === 0) {
@@ -22,9 +22,9 @@
             count++;
             document.writeln(i);
         }
-        if (count === numbers) {
-            break;
-        }
+        // if (count === numbers) {
+        //     break;
+        // }
     }
 </script>
 </body>
