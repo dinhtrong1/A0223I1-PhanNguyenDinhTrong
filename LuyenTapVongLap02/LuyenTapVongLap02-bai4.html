@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LuyenTapVongLap02-bai4</title>
+</head>
+<body>
+<script>
+    let a, b, i, j, k;
+    a = +prompt("nhập chiều dài hình chữ nhật");
+    while (a <= 0) {
+        a = +prompt("chiều dài không thể là số âm, mời nhập lại");
+    }
+    b = +prompt("nhập rộng dài hình chữ nhật");
+    while (b <= 0) {
+        b = +prompt("chiều rộng không thể là số âm, mời nhập lại");
+    }
+    for (i = 0; i < a; i++) {
+        document.write("*");
+    }document.write("<br>");
+    for (j = 0; j < b-2; j++) {
+        document.write("*");
+        for (k = 0; k < a-2 ; k++) {
+            document.write("&nbsp&nbsp")
+        }
+        document.write("*");
+        document.write("<br>");
+    }
+    for (i = 0; i < a; i++) {
+        document.write("*");
+    }
+</script>
+</body>
+</html>
