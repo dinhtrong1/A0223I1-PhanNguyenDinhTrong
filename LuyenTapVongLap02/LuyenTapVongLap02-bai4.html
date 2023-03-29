@@ -7,14 +7,14 @@
 <body>
 <script>
     let a, b, i, j, k;
-    a = +prompt("nhập chiều dài hình chữ nhật");
-    while (a <= 0) {
-        a = +prompt("chiều dài không thể là số âm, mời nhập lại");
-    }
-    b = +prompt("nhập rộng dài hình chữ nhật");
-    while (b <= 0) {
-        b = +prompt("chiều rộng không thể là số âm, mời nhập lại");
-    }
+    do{
+        a = +prompt(" Nhập chiều dài: ")
+        b = +prompt("Nhập chiều rộng: ")
+
+        if (a <0 || b<0){
+            alert(" Bạn phải nhập số dương, xin hãy nhập lại!")
+        }
+    }while (a <0 || b<0);
     for (i = 0; i < a; i++) {
         document.write("*");
     }document.write("<br>");
