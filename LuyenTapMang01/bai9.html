@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 9</title>
+</head>
+<body>
+<script>
+    let index = 0;
+    let a = new Array();
+    for (let i = 0; i < 10; i++) {
+        a[i] = prompt("nhập phần tử thứ " + (i + 1) + " mảng a");
+    }
+    let b = new Array();
+    for (let i = 0; i < 10; i++) {
+        b[i] = prompt("nhập phần tử thứ " + (i + 1) + " mảng b");
+    }
+    let arr = new Array();
+    for (let i = 0; i < a.length; i++) {
+        arr[i] = a[i];
+        index++;
+    }
+    for (let i = 0; i < b.length; i++) {
+        arr[index] = b[i];
+        index++;
+    }
+    document.write(arr);
+</script>
+</body>
+</html>

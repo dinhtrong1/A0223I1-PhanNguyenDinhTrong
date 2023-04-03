@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai7</title>
+</head>
+<body>
+<script>
+    let arr = new Array();
+    for (let i = 0; i < 10; i++) {
+        arr[i] = +prompt("nhập phần tử thứ " + (i + 1));
+    }
+    let V = +prompt("tạo một số V bất kỳ");
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === V) {
+            arr.splice(i, 1);
+        }
+    }
+    document.write(arr);
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 3</title>
+</head>
+<body>
+<script>
+    let max = 0, sum = 0;
+    let arr = new Array();
+    for (let i = 0; i < 5; i++) {
+        arr[i] = +prompt("nhập vào phần tử số " + (i + 1));
+    }
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    alert("số lớn nhất trong mảng là " + max + " giá trị trung bình của các phần tử trong mảng " + (sum / arr.length));
+</script>
+</body>
+</html>

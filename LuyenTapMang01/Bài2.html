@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<script>
+    let max = 0, index;
+    let arr = new Array();
+    for (let i = 0; i < 10; i++) {
+        arr[i] = +prompt("nhập vào phần tử số " + (i + 1));
+    }
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+            index = i;
+        }
+    }
+    alert("số lớn nhất trong mảng là " + max + " tại vị trí " + (index + 1));
+</script>
+</body>
+</html>
