@@ -5,30 +5,20 @@
     <title>dictionary</title>
 </head>
 <body>
-
-<label for="dictionary"></label>
-<input placeholder="Key" type="text" id="dictionary" name="dictionary">
+<input type="text" id="dictionary">
 <button type="button" onclick="search()">Search</button>
 <p id="a"></p>
-<!--JS-->
 <script>
-
-    function search (){
+    function search() {
         let newWord = document.getElementById("dictionary").value;
-        let Eng = ["hello","goodbye","thankyou"];
-        let Vie = ["xin chào","tạm biệt","cảm ơn"];
-
-        if(Eng.indexOf(newWord) !== -1){
-            document.getElementById("a").innerText=(Vie[Eng.indexOf(newWord)]);
-        }else{
-            document.getElementById("a").innerText ="Không thấy từ vừa nhập trong từ điển! Xin mời bạn nhập lại"
+        let Eng = ["hello", "goodbye", "thankyou"];
+        let Vie = ["xin chào", "tạm biệt", "cảm ơn"];
+        if (Eng.indexOf(newWord) !== -1) {
+            document.getElementById("a").innerText = (Vie[Eng.indexOf(newWord)]);
+        } else {
+            document.getElementById("a").innerText = "Không thấy từ vừa nhập trong từ điển! Xin mời bạn nhập lại"
         }
     }
-
-
-
-
 </script>
-
 </body>
 </html>
