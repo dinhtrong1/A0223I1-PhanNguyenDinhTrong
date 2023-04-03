@@ -2,32 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>LuyenTapVongLap02-bai4</title>
+    <title>Rectangle</title>
 </head>
 <body>
 <script>
-    let a, b, i, j, k;
-    do{
-        a = +prompt(" Nhập chiều dài: ")
-        b = +prompt("Nhập chiều rộng: ")
+    for (let i = 1; i <= 5; i++){
+        for (let j = 1; j <= 8; j++){
 
-        if (a <0 || b<0){
-            alert(" Bạn phải nhập số dương, xin hãy nhập lại!")
+            if (i == 1 || j == 1 || i == 5 || j == 8) {
+                document.write("* ");
+            }
+            else{
+                document.write("&nbsp&nbsp&nbsp")
+            }
         }
-    }while (a <0 || b<0);
-    for (i = 0; i < a; i++) {
-        document.write("*");
-    }document.write("<br>");
-    for (j = 0; j < b-2; j++) {
-        document.write("*");
-        for (k = 0; k < a-2 ; k++) {
-            document.write("&nbsp&nbsp")
-        }
-        document.write("*");
-        document.write("<br>");
-    }
-    for (i = 0; i < a; i++) {
-        document.write("*");
+        document.write("<br/>")
     }
 </script>
 </body>
