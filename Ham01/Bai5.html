@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai5</title>
+</head>
+<body>
+<script>
+    let array1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let array2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let a = prompt("nhập vào tên ngôi sao cần tìm kiếm");
+    Star(a);
+
+    function Star(string) {
+        for (let i = 0; i < array1.length; i++) {
+            if (string === array1[i]) {
+                alert("ngôi sao " + array1[i] + " thuộc chòm sao " + array2[i]);
+                break;
+            } else {
+                alert("không tìm thấy ngôi sao");
+                break;
+            }
+        }
+    }
+</script>
+</body>
+</html>
