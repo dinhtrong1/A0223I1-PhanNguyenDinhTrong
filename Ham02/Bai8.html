@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai8</title>
+</head>
+<body>
+<script>
+    let arr = new Array();
+    for (let i = 0; i < 10; i++) {
+        arr[i] = +prompt("nhập vào phần tử thứ " + (i + 1));
+    }
+    alert("mảng trước khi gọi hàm " + arr);
+    alert("mảng sau khi gọi hàm " + change(arr));
+
+    function change(arr) {
+        first = 0;
+        last = arr.length - 1;
+        while (first < last) {
+            let b = arr[first];
+            arr[first] = arr[last];
+            arr[last] = b;
+            first++;
+            last--;
+        }
+        return arr;
+    }
+</script>
+</body>
+</html>

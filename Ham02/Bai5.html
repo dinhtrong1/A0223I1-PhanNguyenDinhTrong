@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai5</title>
+</head>
+<body>
+<script>
+    a = +prompt("nhập vào số a");
+    b = +prompt("nhập vào số b");
+    c = +prompt("nhập vào số c");
+    alert(Min(a, b, c));
+
+    function Min(a, b, c) {
+        if (a > b && a > c) {
+            return a;
+        } else if (b > c) {
+            return b;
+        } else {
+            return c;
+        }
+    }
+</script>
+</body>
+</html>

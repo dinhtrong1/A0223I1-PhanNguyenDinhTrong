@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai9</title>
+</head>
+<body>
+<script>
+    let arr = new Array();
+    for (let i = 0; i < 10; i++) {
+        arr[i] = +prompt("nhập vào ký tự thứ " + (i + 1));
+    }
+    a = +prompt("nhập vào một ký tự bất kỳ");
+    alert(check(arr, a));
+
+    function check(arr, a) {
+        count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (a === arr[i]) {
+                count++;
+            }
+        }
+        if (count != 0) {
+            return count;
+        } else {
+            return -1;
+        }
+    }
+</script>
+</body>
+</html>
