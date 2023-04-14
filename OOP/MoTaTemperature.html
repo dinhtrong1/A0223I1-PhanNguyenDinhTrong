@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả Temperature</title>
+</head>
+<body>
+<p id="display1"></p>
+<p id="display2"></p>
+<script>
+    class Temperature {
+        constructor(C) {
+            this.C = C;
+        }
+
+        CtoF() {
+            return (9 / 5 * this.C + 32);
+        }
+
+        CtoKenvin() {
+            return (this.C + 273.15);
+        }
+    }
+
+    let temperature = new Temperature(25);
+    document.getElementById("display1").innerText = "nhiệt độ F là " + temperature.CtoF() + " độ";
+    document.getElementById("display2").innerText = "nhiệt độ K là " + temperature.CtoKenvin() + " độ";
+</script>
+</body>
+</html>
