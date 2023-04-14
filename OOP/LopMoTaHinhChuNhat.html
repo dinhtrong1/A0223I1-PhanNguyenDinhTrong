@@ -31,27 +31,11 @@
             return this.width * this.height;
         }
 
-        setWidth(width) {
-            this.width = width;
-        }
-
-        setHeight(heigth) {
-            this.heigth = heigth;
-        }
-
-        setAll(width, heigth) {
-            this.width = width;
-            this.height = height;
-
-        }
-
         drawRectangle(width, heigth) {
             var canvas = document.getElementById("DemoCanvas");
-            if (canvas.getContext) {
-                var ctx = canvas.getContext('2d');
-                ctx.fillStyle = '#ffc0CB';
-                ctx.fillRect(0, 0, this.getWidth(), this.getHeigth());
-            }
+            var ctx = canvas.getContext('2d');
+            ctx.fillStyle = '#ffc0CB';
+            ctx.fillRect(0, 0, this.getWidth(), this.getHeigth());
         }
     }
 
