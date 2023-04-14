@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lớp mô tả hình chữ nhật</title>
+</head>
+<body>
+<canvas id="DemoCanvas"></canvas>
+<p id="dienTich"></p>
+<p id="chuVi"></p>
+<script>
+    class Rectangle {
+        constructor(width, height) {
+            this.width = width;
+            this.height = height;
+        }
+
+        getWidth() {
+            return this.width;
+        }
+
+        getHeigth() {
+            return this.height;
+        }
+
+        chuVi() {
+            return (this.width + this.height) * 2;
+        }
+
+        dienTich() {
+            return this.width * this.height;
+        }
+
+        setWidth(width) {
+            this.width = width;
+        }
+
+        setHeight(heigth) {
+            this.heigth = heigth;
+        }
+
+        setAll(width, heigth) {
+            this.width = width;
+            this.height = height;
+
+        }
+
+        drawRectangle(width, heigth) {
+            var canvas = document.getElementById("DemoCanvas");
+            if (canvas.getContext) {
+                var ctx = canvas.getContext('2d');
+                ctx.fillStyle = '#ffc0CB';
+                ctx.fillRect(0, 0, this.getWidth(), this.getHeigth());
+            }
+        }
+    }
+
+    let rectangle = new Rectangle(300, 160);
+    rectangle.drawRectangle();
+    document.getElementById("dienTich").innerText = "Dien tich hinh chu nhat la " + rectangle.dienTich()
+    document.getElementById("chuVi").innerText = "Chu vi hinh chu nhat la " + rectangle.chuVi();
+</script>
+</body>
+</html>
