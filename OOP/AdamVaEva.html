@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AdamvsEva</title>
+</head>
+<body>
+<script>
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+
+        say(text) {
+        }
+    }
+
+    class Eva_Adam extends Human {
+        constructor(name, gender, weight) {
+            super(name, gender, weight);
+        }
+
+        eatApple(apple) {
+            if (apple.weight <= 10) {
+                this.weight += 1;
+                apple.weight -= 1;
+            } else {
+                this.say("táo to quá không ăn")
+            }
+        }
+
+        say(text) {
+            console.log(this.name + " hmm: " + text);
+        }
+    }
+
+    class Apple {
+        constructor(weight) {
+            this.weight = weight;
+        }
+    }
+
+    let Adam = new Eva_Adam("Adam", "male", 65)
+    let apple1 = new Apple(10);
+    Adam.eatApple(apple1)
+    console.log(Adam.weight)
+    console.log(apple1.weight)
+</script>
+</body>
+</html>
