@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CongTacVaBongDen</title>
+</head>
+<body>
+<script>
+    class SwitchButton {
+        constructor(status, lamp) {
+            this.status = status;
+            this.lamp = lamp;
+        }
+
+        connectToLamp(Lamp) {
+            Lamp.status = this.status;
+        }
+
+        switchOn() {
+            this.status = true;
+            this.connectToLamp(this.lamp);
+            console.log("lamp is on")
+        }
+
+        switchOff() {
+            this.status = false;
+            this.connectToLamp(this.lamp);
+            console.log("lamp is off")
+        }
+    }
+
+    class ElectricLamp {
+        constructor(status) {
+            this.status = status;
+        }
+
+        turnOff() {
+            this.status = false;
+        }
+
+        turnOn() {
+            this.status = true;
+        }
+    }
+
+    let lamp = new ElectricLamp(false);
+    let button = new SwitchButton(false, lamp);
+    for (let i = 0; i < 5; i++) {
+        button.switchOn();
+        button.switchOff();
+    }
+</script>
+</body>
+</html>
